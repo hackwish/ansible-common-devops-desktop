@@ -1,0 +1,8 @@
+---
+# tasks file for ansible-common-devops-desktop
+
+- include: repos.yml
+  tags: repos
+
+- include: packages.yml
+  tags: packages

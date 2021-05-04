@@ -1,0 +1,68 @@
+---
+#UPDATE - UPGRADE
+- name: Upgrading all packages (Ubuntu/Debian)
+  apt:
+    upgrade: dist
+  when: ansible_os_family == "Debian" or ansible_os_family == "Ubuntu"
+
+#INSTALL COMMON PACKAGES 
+- name: Instala paquetes common
+  apt: 
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - awscli
+      - docker
+      - docker-ce
+      - docker-compose
+      - google-cloud-sdk
+      - google-cloud-sdk-app-engine-go
+      - google-cloud-sdk-app-engine-java
+      - google-cloud-sdk-app-engine-python
+      - google-cloud-sdk-app-engine-python-extras
+      - google-cloud-sdk-bigtable-emulator
+      - google-cloud-sdk-bigtable-emulator
+      - google-cloud-sdk-cbt
+      - google-cloud-sdk-cloud-build-local
+      - google-cloud-sdk-datalab
+      - google-cloud-sdk-datastore-emulator
+      - google-cloud-sdk-firestore-emulator
+      - google-cloud-sdk-pubsub-emulator
+      - kubectl
+      - meld
+      - pgadmin3
+      - postgresql-client
+      - sublime-merge
+      - sublime-text
+    state: present
+  #register: common-packages-installation
+  tags: common
+
+# Snap
+- name: Install snaps
+  snap:
+    name:
+      - beekeeper-studio
+      - dbeaver-ce
+      - insomnia
+      - k9s
+      - postman
+      - sosumi
+
+- name: Install snaps classic
+  snap:
+    name:
+      - code
+      - helm
+      - powershell
+      - pycharm-community
+    classic: yes
+
+# Flatpak
+- name: Add the flathub flatpak repository remote to the user installation
+  flatpak_remote:
+    name: flathub
+    state: present
+    flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
+    method: user
+
