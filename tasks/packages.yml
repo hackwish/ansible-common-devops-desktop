@@ -35,6 +35,7 @@
       - postgresql-client
       - sublime-merge
       - sublime-text
+      - virtualbox-6.0
     state: present
   #register: common-packages-installation
   tags: common
