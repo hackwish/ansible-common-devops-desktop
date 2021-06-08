@@ -91,5 +91,5 @@
       - 'gemspec'
       - 'fog'
       - 'capistrano'
-      - 'terraspace'
+      # - 'terraspace'
     state: present

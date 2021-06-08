@@ -54,13 +54,18 @@
       repo: deb http://packages.cloud.google.com/apt cloud-sdk main
       state : present
 
+# terraspace
+- apt_key:
+    url: https://apt.boltops.com/boltops-key.public
+    state: present
+
+- apt_repository:
+    repo: deb https://apt.boltops.com stable main
+    state : present
+
 - name: apt-get update
   shell: apt-get update
   become: true
   become_user: root
   ignore_errors: yes
 
-# terraspace
-- apt_repository:
-    repo: deb https://apt.boltops.com stable main
-    state : present
