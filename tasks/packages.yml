@@ -6,7 +6,7 @@
   when: ansible_os_family == "Debian" or ansible_os_family == "Ubuntu"
 
 #INSTALL COMMON PACKAGES 
-- name: Instala paquetes common
+- name: Instala paquetes devops common
   apt: 
     name: "{{ packages }}"
   vars:
