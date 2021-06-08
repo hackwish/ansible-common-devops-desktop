@@ -37,6 +37,7 @@
       - sublime-text
       - virtualbox-6.0
       - httpie
+      - terraspace
     state: present
   #register: common-packages-installation
   tags: common

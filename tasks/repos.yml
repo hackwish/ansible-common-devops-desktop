@@ -59,3 +59,8 @@
   become: true
   become_user: root
   ignore_errors: yes
+
+# terraspace
+- apt_repository:
+    repo: deb https://apt.boltops.com stable main
+    state : present
