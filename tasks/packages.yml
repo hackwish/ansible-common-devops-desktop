@@ -36,6 +36,7 @@
       - sublime-merge
       - sublime-text
       - virtualbox-6.0
+      - httpie
     state: present
   #register: common-packages-installation
   tags: common
@@ -68,3 +69,26 @@
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
     method: user
 
+#INSTALL PIPS
+- name: Install Python packages.
+  pip:
+    name: "{{ packages }}"
+    executable: pip3
+  vars:
+    packages:
+      - pyOpenSSL
+      - virtualenv
+      #- awscli
+    state: present
+
+  #INSTALL GEMS
+- gem:
+    name: "{{ packages }}"
+  vars:
+    packages:
+      - 'rake'
+      - 'gemspec'
+      - 'fog'
+      - 'capistrano'
+      - 'terraspace'
+    state: present
