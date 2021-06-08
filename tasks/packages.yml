@@ -83,13 +83,14 @@
     state: present
 
   #INSTALL GEMS
-- gem:
+- name: Install RB packages.
+  gem:
     name: "{{ packages }}"
   vars:
     packages:
-      - 'rake'
-      - 'gemspec'
-      - 'fog'
-      - 'capistrano'
+      - rake
+      - gemspec
+      - fog
+      - capistrano
       # - 'terraspace'
     state: present
