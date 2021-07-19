@@ -38,6 +38,7 @@
       - virtualbox-6.0
       - httpie
       - terraspace
+      - apache2-utils
     state: present
   #register: common-packages-installation
   tags: common
