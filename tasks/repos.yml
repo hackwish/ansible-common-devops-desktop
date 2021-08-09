@@ -63,6 +63,20 @@
     repo: deb https://apt.boltops.com stable main
     state : present
 
+# Podman (Ubuntu 20.04)
+- apt_key:
+    url: https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/xUbuntu_${VERSION_ID}/Release.key
+    state: present
+    when: ansible_distribution_release == 'ulyana' 
+
+- apt_repository:
+    repo: deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /
+    state : present
+    when: ansible_distribution_release == 'ulyana' or 
+        ansible_distribution_release == 'ulyssa' or 
+        ansible_distribution_release == 'uma' or 
+        ansible_distribution_release == 'focal'
+
 - name: apt-get update
   shell: apt-get update
   become: true

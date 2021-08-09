@@ -39,6 +39,7 @@
       - httpie
       - terraspace
       - apache2-utils
+      - buildah
     state: present
   #register: common-packages-installation
   tags: common
