@@ -65,7 +65,7 @@
 
 # Podman (Ubuntu 20.04)
 - apt_key:
-    url: "https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/xUbuntu_${VERSION_ID}/Release.key"
+    url: "https://download.opensuse.org/repositories/devel:kubic:libcontainers:stable/xUbuntu_20.04/Release.key"
     state: present
     when: ansible_distribution_release == 'ulyana' or 
         ansible_distribution_release == 'ulyssa' or 
@@ -73,7 +73,7 @@
         ansible_distribution_release == 'focal'
 
 - apt_repository:
-    repo: "deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_${VERSION_ID}/ /"
+    repo: "deb http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /"
     state: present
     when: ansible_distribution_release == 'ulyana' or 
         ansible_distribution_release == 'ulyssa' or 
