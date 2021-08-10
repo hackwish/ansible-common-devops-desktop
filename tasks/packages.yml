@@ -40,6 +40,7 @@
       - terraspace
       - apache2-utils
       - buildah
+      - libcurl4-openssl-dev
     state: present
   #register: common-packages-installation
   tags: common
