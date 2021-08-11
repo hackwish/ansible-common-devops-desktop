@@ -55,6 +55,7 @@
       - k9s
       - postman
       - sosumi
+      - kustomize
 
 - name: Install snaps classic
   snap:
@@ -63,6 +64,7 @@
       - helm
       - powershell
       - pycharm-community
+      - kontena-lens
     classic: yes
 
 # Flatpak
