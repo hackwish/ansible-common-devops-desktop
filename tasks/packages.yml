@@ -41,6 +41,7 @@
       - apache2-utils
       - buildah
       - libcurl4-openssl-dev
+      - k6
     state: present
   #register: common-packages-installation
   tags: common
@@ -84,6 +85,7 @@
     packages:
       - pyOpenSSL
       - virtualenv
+      - locust
       #- awscli
     state: present
 
