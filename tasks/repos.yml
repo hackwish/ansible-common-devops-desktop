@@ -24,12 +24,15 @@
 - apt_key:
     url: https://www.virtualbox.org/download/oracle_vbox_2016.asc
     state: present
+  ignore_errors: yes
 - apt_key:
     url: https://www.virtualbox.org/download/oracle_vbox.asc
     state: present
+  ignore_errors: yes
 - apt_repository:
     repo: 'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian {{ codename }} contrib'
     state: present
+  ignore_errors: yes
 
 #Docker
 - apt_key:
@@ -60,7 +63,7 @@
     state: present
 
 - apt_repository:
-    repo: deb https://apt.boltops.com stable main
+    repo: deb [arch=amd64] https://apt.boltops.com stable main
     state : present
 
 # Podman (Ubuntu 20.04)
