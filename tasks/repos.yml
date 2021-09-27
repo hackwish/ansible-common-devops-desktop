@@ -65,6 +65,7 @@
 - apt_repository:
     repo: deb [arch=amd64] https://apt.boltops.com stable main
     state : present
+    update_cache: no
 
 # Podman (Ubuntu 20.04)
 - apt_key:
