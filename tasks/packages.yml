@@ -42,6 +42,8 @@
       - buildah
       - libcurl4-openssl-dev
       - k6
+      - mysql-client
+      - mysql-client-8.0
     state: present
   #register: common-packages-installation
   tags: common
