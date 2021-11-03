@@ -35,7 +35,7 @@
       - postgresql-client
       - sublime-merge
       - sublime-text
-      - virtualbox-6.0
+      - virtualbox-6.1
       - httpie
       - terraspace
       - apache2-utils
