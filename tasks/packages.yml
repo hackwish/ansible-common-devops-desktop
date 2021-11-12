@@ -5,6 +5,12 @@
     upgrade: dist
   when: ansible_os_family == "Debian" or ansible_os_family == "Ubuntu"
 
+# FIX PACKAGES
+- name: Remove "virtualbox-6.1" package
+  apt:
+    name: virtualbox-6.1
+    state: absent
+
 #INSTALL COMMON PACKAGES 
 - name: Instala paquetes devops common
   apt: 
@@ -35,7 +41,8 @@
       - postgresql-client
       - sublime-merge
       - sublime-text
-      - virtualbox-6.1
+      # - virtualbox-6.1
+      - virtualbox
       - httpie
       - terraspace
       - apache2-utils
@@ -44,6 +51,7 @@
       - k6
       - mysql-client
       - mysql-client-8.0
+      - qemu-kvm
     state: present
   #register: common-packages-installation
   tags: common
@@ -68,6 +76,7 @@
       - powershell
       - pycharm-community
       - kontena-lens
+      - android-studio
     classic: yes
 
 # Flatpak
