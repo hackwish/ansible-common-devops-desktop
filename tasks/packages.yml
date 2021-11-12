@@ -52,6 +52,7 @@
       - mysql-client
       - mysql-client-8.0
       - qemu-kvm
+      - exa
     state: present
   #register: common-packages-installation
   tags: common
