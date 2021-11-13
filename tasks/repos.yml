@@ -93,9 +93,15 @@
     repo: 'deb https://dl.k6.io/deb stable main'
     state : present
 
+# Exa
+- name: Add EXA PPA
+  ansible.builtin.apt_repository:
+    repo: ppa:spvkgn/exa
+    update_cache: no
+
 - name: apt-get update
   shell: apt-get update
   become: true
   become_user: root
   ignore_errors: yes
-
+  
