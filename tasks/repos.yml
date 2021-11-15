@@ -97,6 +97,8 @@
 - name: Add EXA PPA
   apt_repository:
     repo: ppa:spvkgn/exa
+    codename: '{{ codename }}'
+    state : present
     update_cache: no
 
 - name: apt-get update
