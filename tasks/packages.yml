@@ -37,7 +37,7 @@
       - kubectl
       - meld
       - pgadmin3
-      - podman
+      # - podman
       - postgresql-client
       - sublime-merge
       - sublime-text
