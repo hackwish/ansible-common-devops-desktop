@@ -46,7 +46,7 @@
       - httpie
       - terraspace
       - apache2-utils
-      - buildah
+      # - buildah
       - libcurl4-openssl-dev
       - k6
       - mysql-client
