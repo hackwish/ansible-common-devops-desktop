@@ -53,6 +53,7 @@
       - mysql-client-8.0
       - qemu-kvm
       - exa
+      - pwgen
     state: present
   #register: common-packages-installation
   tags: common
@@ -68,6 +69,7 @@
       - postman
       - sosumi
       - kustomize
+      - storage-explorer
 
 - name: Install snaps classic
   snap:
@@ -98,6 +100,11 @@
       - pyOpenSSL
       - virtualenv
       - locust
+      - boto
+      - pre-commit
+      - secrets
+      - kubernetes
+      - avro-python3
       #- awscli
     state: present
 
@@ -127,3 +134,10 @@
   apt:
     deb: https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
   when: ansible_os_family == "Debian"
+
+# Install from scripts
+- name: Get latest Release from glab
+  shell: curl -s https://raw.githubusercontent.com/profclems/glab/trunk/scripts/install.sh | sudo sh
+  args:
+    warn: no
+  tags: glab
