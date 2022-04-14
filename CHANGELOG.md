@@ -1,3 +1,12 @@
+# [1.1.0](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.0.2...v1.1.0) (2022-04-14)
+
+
+### Features
+
+* **ansible:** add infracost. Add awsvpnclient ([ebe30e3](https://github.com/hackwish/ansible-common-devops-desktop/commit/ebe30e30ee13e37cb49d680a1740f514543aabb6))
+* **ansible:** add infracost. Add awsvpnclient ([95fcb79](https://github.com/hackwish/ansible-common-devops-desktop/commit/95fcb7914284ffc83f94f76695d7fbe07106d3d4))
+* **ansible:** Update packages ([e10ad94](https://github.com/hackwish/ansible-common-devops-desktop/commit/e10ad9431a02752b4843ed06ddb25130d35b1595))
+
 ## [1.0.2](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.0.1...v1.0.2) (2021-11-15)
 
 
