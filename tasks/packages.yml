@@ -134,6 +134,13 @@
   apt:
     deb: https://storage.googleapis.com/minikube/releases/latest/minikube_latest_amd64.deb
   when: ansible_os_family == "Debian"
+  ignore_errors: true
+
+- name: Install a .deb package for AWS VPN Client
+  apt:
+    deb: https://d20adtppz83p9s.cloudfront.net/GTK/latest/awsvpnclient_amd64.deb
+  when: ansible_os_family == "Debian"
+  ignore_errors: true
 
 # Install from scripts
 - name: Get latest Release from glab
@@ -141,3 +148,9 @@
   args:
     warn: no
   tags: glab
+
+- name: Get latest Release Infracost
+  shell: curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sudo sh
+  args:
+    warn: no
+  tags: infrascost
