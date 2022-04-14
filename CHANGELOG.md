@@ -1,3 +1,10 @@
+## [1.0.2](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.0.1...v1.0.2) (2021-11-15)
+
+
+### Bug Fixes
+
+* **ansible:** update exa ppa with codename ([ded76f6](https://github.com/hackwish/ansible-common-devops-desktop/commit/ded76f62a78e106a2c9432ee2e6d259a6183aba4))
+
 ## [1.0.1](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.0.0...v1.0.1) (2021-11-15)
 
 

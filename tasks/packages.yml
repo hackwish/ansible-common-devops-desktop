@@ -37,7 +37,7 @@
       - kubectl
       - meld
       - pgadmin3
-      - podman
+      # - podman
       - postgresql-client
       - sublime-merge
       - sublime-text
@@ -46,7 +46,7 @@
       - httpie
       - terraspace
       - apache2-utils
-      - buildah
+      # - buildah
       - libcurl4-openssl-dev
       - k6
       - mysql-client
@@ -154,3 +154,4 @@
   args:
     warn: no
   tags: infrascost
+
