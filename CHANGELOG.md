@@ -1,3 +1,10 @@
+## [1.1.3](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.2...v1.1.3) (2022-06-22)
+
+
+### Bug Fixes
+
+* **ansible:** fixing packages ([771684e](https://github.com/hackwish/ansible-common-devops-desktop/commit/771684e962b5b781795c623ce447aa78bfebe845))
+
 ## [1.1.2](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.1...v1.1.2) (2022-06-22)
 
 
