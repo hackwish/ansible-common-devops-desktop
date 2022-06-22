@@ -94,7 +94,7 @@
 
 #INSTALL PIPS
 - name: Fixing packages deps
-  shell: pip3 install --ignore-installed pyzmq PyYAML
+  shell: pip3 install --ignore-installed pyzmq PyYAML psutil
 
 - name: Install Python packages.
   pip:
