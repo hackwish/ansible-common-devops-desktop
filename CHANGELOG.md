@@ -1,3 +1,11 @@
+## [1.1.2](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.1...v1.1.2) (2022-06-22)
+
+
+### Bug Fixes
+
+* **ansible:** update maestral ([f3a34c0](https://github.com/hackwish/ansible-common-devops-desktop/commit/f3a34c0267cef0110c93f419a739dd1dde4219cd))
+* **ansible:** update maestral ([dedb1a3](https://github.com/hackwish/ansible-common-devops-desktop/commit/dedb1a3b60054d248999491a2564563860c8927a))
+
 ## [1.1.1](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.0...v1.1.1) (2022-06-22)
 
 
