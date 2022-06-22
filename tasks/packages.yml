@@ -8,9 +8,9 @@
 # FIX PACKAGES
 - name: Remove "virtualbox-6.1" package
   apt:
-    name: virtualbox-6.1
-    state: absent
-
+   name: virtualbox-6.1
+   state: absent
+ 
 #INSTALL COMMON PACKAGES 
 - name: Instala paquetes devops common
   apt: 
