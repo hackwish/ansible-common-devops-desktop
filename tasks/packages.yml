@@ -93,6 +93,9 @@
     method: user
 
 #INSTALL PIPS
+- name: Fixing packages deps
+  shell: pip3 install --ignore-installed pyzmq PyYAML
+
 - name: Install Python packages.
   pip:
     name: "{{ packages }}"
