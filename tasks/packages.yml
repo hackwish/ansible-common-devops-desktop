@@ -35,14 +35,14 @@
       - google-cloud-sdk-firestore-emulator
       - google-cloud-sdk-pubsub-emulator
       - kubectl
-      - meld
+      # - meld
       - libssl-dev
       - libffi-dev
       - pgadmin3
       # - podman
       - postgresql-client
-      - sublime-merge
-      - sublime-text
+      # - sublime-merge
+      # - sublime-text
       # - virtualbox-6.1
       - virtualbox
       - httpie
@@ -66,9 +66,9 @@
     name:
       - beekeeper-studio
       - dbeaver-ce
-      - insomnia
+      # - insomnia
       - k9s
-      - postman
+      # - postman
       - sosumi
       - kustomize
       - storage-explorer
@@ -76,12 +76,12 @@
 - name: Install snaps classic
   snap:
     name:
-      - code
+      # - code
       - helm
       - powershell
       - pycharm-community
       - kontena-lens
-      - android-studio
+      # - android-studio
     classic: yes
 
 # Flatpak
@@ -91,6 +91,18 @@
     state: present
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
     method: user
+
+- name: Install multiple packages
+  community.general.flatpak:
+    name:
+      - com.sublimemerge.App
+      - com.sublimetext.three
+      - com.visualstudio.code
+      - com.google.AndroidStudio
+      - org.gnome.meld
+      - rest.insomnia.Insomnia
+      - com.getpostman.Postman
+    method: system
 
 #INSTALL PIPS
 - name: Fixing packages deps
