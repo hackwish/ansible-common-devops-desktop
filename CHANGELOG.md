@@ -1,3 +1,10 @@
+## [1.1.9](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.8...v1.1.9) (2022-08-09)
+
+
+### Bug Fixes
+
+* **ansible:** remove pgadmin3 ([a014749](https://github.com/hackwish/ansible-common-devops-desktop/commit/a0147491431ff8078c757bebbd786f1e80e79223))
+
 ## [1.1.8](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.7...v1.1.8) (2022-08-09)
 
 
