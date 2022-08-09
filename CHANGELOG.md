@@ -1,3 +1,10 @@
+## [1.1.6](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.5...v1.1.6) (2022-08-09)
+
+
+### Bug Fixes
+
+* **ansible:** disable docker ([83363e8](https://github.com/hackwish/ansible-common-devops-desktop/commit/83363e8b0edd86c0526234a0862bdc60af4b59de))
+
 ## [1.1.5](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.4...v1.1.5) (2022-08-09)
 
 
