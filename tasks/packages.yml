@@ -38,7 +38,7 @@
       # - meld
       - libssl-dev
       - libffi-dev
-      - pgadmin3
+      # - pgadmin3
       # - podman
       - postgresql-client
       # - sublime-merge
