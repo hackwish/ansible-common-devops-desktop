@@ -1,3 +1,10 @@
+## [1.1.7](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.6...v1.1.7) (2022-08-09)
+
+
+### Bug Fixes
+
+* **ansible:** add no update repos ([30b4c01](https://github.com/hackwish/ansible-common-devops-desktop/commit/30b4c0142aa04946cb239a147ca96a27831300c2))
+
 ## [1.1.6](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.5...v1.1.6) (2022-08-09)
 
 
