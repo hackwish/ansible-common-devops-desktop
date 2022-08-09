@@ -1,3 +1,10 @@
+## [1.1.5](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.4...v1.1.5) (2022-08-09)
+
+
+### Bug Fixes
+
+* **ansible:** add flatpaks packages ([421539e](https://github.com/hackwish/ansible-common-devops-desktop/commit/421539e43977c29cdbb1a5efd3de8a5effb3ecc8))
+
 ## [1.1.4](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.3...v1.1.4) (2022-06-22)
 
 
