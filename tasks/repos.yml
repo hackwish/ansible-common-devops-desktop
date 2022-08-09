@@ -32,8 +32,7 @@
 - apt_repository:
     repo: 'deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian {{ codename }} contrib'
     state: present
-
-  update_cache: no
+    update_cache: no
 
 #Docker
 # - apt_key:
