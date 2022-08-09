@@ -35,18 +35,18 @@
   ignore_errors: yes
 
 #Docker
-- apt_key:
-    url: https://download.docker.com/linux/ubuntu/gpg
-    state: present
-# - apt_repository:
-#     repo: 'deb [arch=amd64] https://download.docker.com/linux/ubuntu '{{ codename }}' stable'
-#     state : present
-#     when: ansible_distribution == 'Linux Mint'
+# - apt_key:
+#     url: https://download.docker.com/linux/ubuntu/gpg
+#     state: present
+# # - apt_repository:
+# #     repo: 'deb [arch=amd64] https://download.docker.com/linux/ubuntu '{{ codename }}' stable'
+# #     state : present
+# #     when: ansible_distribution == 'Linux Mint'
 
-- apt_repository:
-    repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ codename }} stable
-    state : present
-#  when: ansible_distribution == 'Ubuntu'
+# - apt_repository:
+#     repo: deb [arch=amd64] https://download.docker.com/linux/ubuntu {{ codename }} stable
+#     state : present
+# #  when: ansible_distribution == 'Ubuntu'
 
 #GCLOUD SDK
 - apt_key:

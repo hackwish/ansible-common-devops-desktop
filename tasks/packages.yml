@@ -18,9 +18,9 @@
   vars:
     packages:
       - awscli
-      - docker
-      - docker-ce
-      - docker-compose
+      # - docker
+      # - docker-ce
+      # - docker-compose
       - google-cloud-sdk
       - google-cloud-sdk-app-engine-go
       - google-cloud-sdk-app-engine-java
