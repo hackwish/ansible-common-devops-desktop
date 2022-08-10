@@ -76,7 +76,7 @@
 - name: Install snaps classic
   snap:
     name:
-      # - code
+      - code
       - helm
       - powershell
       - pycharm-community
