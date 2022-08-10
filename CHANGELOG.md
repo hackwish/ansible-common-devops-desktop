@@ -1,3 +1,10 @@
+## [1.1.10](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.9...v1.1.10) (2022-08-10)
+
+
+### Bug Fixes
+
+* **ansible:** enable code on snaps ([d77d529](https://github.com/hackwish/ansible-common-devops-desktop/commit/d77d5297f33b407a765ed4a70a849a15be9adf33))
+
 ## [1.1.9](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.8...v1.1.9) (2022-08-09)
 
 
