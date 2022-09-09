@@ -97,7 +97,7 @@
     name:
       - com.sublimemerge.App
       - com.sublimetext.three
-      - com.visualstudio.code
+      # - com.visualstudio.code
       - com.google.AndroidStudio
       - org.gnome.meld
       - rest.insomnia.Insomnia
@@ -114,15 +114,17 @@
     # executable: pip3
   vars:
     packages:
-      - pyOpenSSL
-      - virtualenv
-      - locust
-      - boto
-      - pre-commit
-      - secrets
-      - kubernetes
-      - avro-python3
       #- awscli
+      - avro-python3
+      - boto
+      - cfn-lint
+      - kubernetes
+      - locust
+      - pre-commit
+      - pyOpenSSL
+      - pydot
+      - secrets
+      - virtualenv
     state: present
 
   #INSTALL GEMS
