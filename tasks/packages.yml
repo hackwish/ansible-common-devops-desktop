@@ -17,45 +17,58 @@
     name: "{{ packages }}"
   vars:
     packages:
-      - awscli
+      # - buildah
       # - docker
       # - docker-ce
       # - docker-compose
-      - google-cloud-sdk
-      - google-cloud-sdk-app-engine-go
-      - google-cloud-sdk-app-engine-java
-      - google-cloud-sdk-app-engine-python
-      - google-cloud-sdk-app-engine-python-extras
-      - google-cloud-sdk-bigtable-emulator
-      - google-cloud-sdk-bigtable-emulator
-      - google-cloud-sdk-cbt
-      - google-cloud-sdk-cloud-build-local
-      - google-cloud-sdk-datalab
-      - google-cloud-sdk-datastore-emulator
-      - google-cloud-sdk-firestore-emulator
-      - google-cloud-sdk-pubsub-emulator
-      - kubectl
       # - meld
-      - libssl-dev
-      - libffi-dev
       # - pgadmin3
       # - podman
-      - postgresql-client
       # - sublime-merge
       # - sublime-text
       # - virtualbox-6.1
-      - virtualbox
-      - httpie
-      - terraspace
       - apache2-utils
-      # - buildah
-      - libcurl4-openssl-dev
+      - awscli
+      - exa
+      - google-cloud-cli
+      - google-cloud-cli-anthos-auth
+      - google-cloud-cli-app-engine-go
+      - google-cloud-cli-app-engine-grpc
+      - google-cloud-cli-app-engine-java
+      - google-cloud-cli-app-engine-python
+      - google-cloud-cli-app-engine-python-extras
+      - google-cloud-cli-bigtable-emulator
+      - google-cloud-cli-cbt
+      - google-cloud-cli-cloud-build-local
+      - google-cloud-cli-cloud-run-proxy
+      - google-cloud-cli-config-connector
+      - google-cloud-cli-datalab
+      - google-cloud-cli-datastore-emulator
+      - google-cloud-cli-firestore-emulator
+      - google-cloud-cli-gke-gcloud-auth-plugin
+      - google-cloud-cli-kpt
+      - google-cloud-cli-kubectl-oidc
+      - google-cloud-cli-local-extract
+      - google-cloud-cli-minikube
+      - google-cloud-cli-nomos
+      - google-cloud-cli-pubsub-emulator
+      - google-cloud-cli-skaffold
+      - google-cloud-cli-spanner-emulator
+      - google-cloud-cli-terraform-validator
+      - google-cloud-cli-tests
+      - httpie
       - k6
+      - kubectl
+      - libcurl4-openssl-dev
+      - libffi-dev
+      - libssl-dev
       - mysql-client
       - mysql-client-8.0
-      - qemu-kvm
-      - exa
+      - postgresql-client
       - pwgen
+      - qemu-kvm
+      - terraspace
+      - virtualbox
     state: present
   #register: common-packages-installation
   tags: common
