@@ -26,18 +26,18 @@
 #Virtualbox
 - apt_key:
     url: https://www.virtualbox.org/download/oracle_vbox_2016.asc
-    keyring: /usr/share/keyrings/oracle_vbox_2016.gpg
+    keyring: /usr/share/keyrings/oracle-virtualbox-2016.gpg
     state: present
 
 
 - apt_key:
     url: https://www.virtualbox.org/download/oracle_vbox.asc
-    keyring: /usr/share/keyrings/oracle_vbox.gpg
+    keyring: /usr/share/keyrings/oracle-virtualbox.gpg
     state: present
 
 
 - apt_repository:
-    repo: 'deb [arch=amd64 signed-by=/usr/share/keyrings/oracle_vbox.gpg] https://download.virtualbox.org/virtualbox/debian {{ codename }} contrib'
+    repo: 'deb [arch=amd64 signed-by=/usr/share/keyrings/oracle-virtualbox-2016.gpg] https://download.virtualbox.org/virtualbox/debian {{ codename }} contrib'
     state: present
     update_cache: no
 
