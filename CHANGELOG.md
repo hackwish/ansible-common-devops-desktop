@@ -1,3 +1,10 @@
+## [1.1.17](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.16...v1.1.17) (2022-09-13)
+
+
+### Bug Fixes
+
+* **ansible:** fix gpg deprecation apt-key ([4791332](https://github.com/hackwish/ansible-common-devops-desktop/commit/4791332c7317d02876d67047b08c2c35b9e1243e))
+
 ## [1.1.16](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.15...v1.1.16) (2022-09-13)
 
 
