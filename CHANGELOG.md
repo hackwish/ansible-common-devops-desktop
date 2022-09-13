@@ -1,3 +1,10 @@
+## [1.1.15](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.14...v1.1.15) (2022-09-13)
+
+
+### Bug Fixes
+
+* **ansible:** update gcloud packages ([6704cca](https://github.com/hackwish/ansible-common-devops-desktop/commit/6704cca6ad20577f9cdf871a8ee32caf73371976))
+
 ## [1.1.14](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.13...v1.1.14) (2022-09-13)
 
 
