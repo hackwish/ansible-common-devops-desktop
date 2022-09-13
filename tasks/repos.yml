@@ -59,11 +59,11 @@
 #GCLOUD SDK
 - apt_key:
     url: https://packages.cloud.google.com/apt/doc/apt-key.gpg
-    keyring: /usr/share/keyrings/gcp.gpg
+    keyring: /usr/share/keyrings/cloud.google.gpg
     state: present
    
 - apt_repository:
-      repo: deb[arch=amd64 signed-by=/usr/share/keyrings/gcp.gpg] http://packages.cloud.google.com/apt cloud-sdk main
+      repo: deb[signed-by=/usr/share/keyrings/cloud.google.gpg] https://packages.cloud.google.com/apt cloud-sdk main
       state : present
       update_cache: no
 
