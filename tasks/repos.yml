@@ -44,7 +44,7 @@
 #Docker
 - apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
-    keyring: /usr/share/keyrings/docker.gpg
+    keyring: /usr/share/keyrings/docker-archive-keyring.gpg
     state: present
 # - apt_repository:
 #     repo: 'deb [arch=amd64] https://download.docker.com/linux/ubuntu '{{ codename }}' stable'
@@ -52,7 +52,7 @@
 #     when: ansible_distribution == 'Linux Mint'
 
 - apt_repository:
-    repo: deb [arch=amd64 signed-by=/usr/share/keyrings/docker.gpg] https://download.docker.com/linux/ubuntu {{ codename }} stable
+    repo: deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu {{ codename }} stable
     state : present
     update_cache: no
 
