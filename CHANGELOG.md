@@ -1,3 +1,11 @@
+## [1.1.11](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.10...v1.1.11) (2022-09-13)
+
+
+### Bug Fixes
+
+* **ansible:** add cfn-lint pydot python packages ([fc8e5d4](https://github.com/hackwish/ansible-common-devops-desktop/commit/fc8e5d4cdf9516abe07e044508bdc186689f07f3))
+* **ansible:** fix gpg deprecation apt-key ([0276aae](https://github.com/hackwish/ansible-common-devops-desktop/commit/0276aae9eacccdd36567f9530f044ef9493829a8))
+
 ## [1.1.10](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.9...v1.1.10) (2022-08-10)
 
 
