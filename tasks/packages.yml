@@ -80,7 +80,7 @@
       - google-cloud-sdk-kpt
       - google-cloud-sdk-kubectl-oidc
       - google-cloud-sdk-local-extract
-      - google-cloud-sdk-minikube
+      # - google-cloud-sdk-minikube
       - google-cloud-sdk-nomos
       - google-cloud-sdk-package-go-module
       - google-cloud-sdk-pubsub-emulator
