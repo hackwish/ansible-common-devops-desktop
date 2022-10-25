@@ -21,15 +21,6 @@
       # - docker
       # - docker-ce
       # - docker-compose
-      # - meld
-      # - pgadmin3
-      # - podman
-      # - sublime-merge
-      # - sublime-text
-      # - virtualbox-6.1
-      - apache2-utils
-      - awscli
-      - exa
       # - google-cloud-cli
       # - google-cloud-cli-anthos-auth
       # - google-cloud-cli-app-engine-go
@@ -59,6 +50,16 @@
       # - google-cloud-cli-terraform-tools
       # - google-cloud-cli-terraform-validator
       # - google-cloud-cli-tests
+      # - google-cloud-sdk-minikube
+      # - meld
+      # - pgadmin3
+      # - podman
+      # - sublime-merge
+      # - sublime-text
+      # - virtualbox-6.1
+      - apache2-utils
+      - awscli
+      - exa
       - google-cloud-sdk
       - google-cloud-sdk-anthos-auth
       - google-cloud-sdk-app-engine-go
@@ -80,7 +81,6 @@
       - google-cloud-sdk-kpt
       - google-cloud-sdk-kubectl-oidc
       - google-cloud-sdk-local-extract
-      # - google-cloud-sdk-minikube
       - google-cloud-sdk-nomos
       - google-cloud-sdk-package-go-module
       - google-cloud-sdk-pubsub-emulator
@@ -100,6 +100,7 @@
       - postgresql-client
       - pwgen
       - qemu-kvm
+      - sshuttle
       - terraspace
       - virtualbox
     state: present
