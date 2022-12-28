@@ -1,3 +1,10 @@
+# [1.2.0](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.22...v1.2.0) (2022-12-28)
+
+
+### Features
+
+* **ansible:** add meld as package. Remove meld on flat ([3a9c7bf](https://github.com/hackwish/ansible-common-devops-desktop/commit/3a9c7bfac7c61a757315676fd13b3c7734d5bc09))
+
 ## [1.1.22](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.21...v1.1.22) (2022-10-25)
 
 
