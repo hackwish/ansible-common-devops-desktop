@@ -95,6 +95,7 @@
       - libcurl4-openssl-dev
       - libffi-dev
       - libssl-dev
+      - meld
       - mysql-client
       - mysql-client-8.0
       - postgresql-client
@@ -146,7 +147,7 @@
       - com.sublimetext.three
       # - com.visualstudio.code
       - com.google.AndroidStudio
-      - org.gnome.meld
+      # - org.gnome.meld
       - rest.insomnia.Insomnia
       - com.getpostman.Postman
     method: system
