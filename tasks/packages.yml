@@ -103,6 +103,7 @@
       - qemu-kvm
       - sshuttle
       - terraspace
+      - vagrant
       - virtualbox
     state: present
   #register: common-packages-installation
