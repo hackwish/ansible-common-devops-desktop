@@ -87,7 +87,6 @@
       ansible_distribution_release == 'ulyssa' or 
       ansible_distribution_release == 'uma' or 
       ansible_distribution_release == 'focal'
-
 - apt_repository:
     repo: "deb [arch=amd64 signed-by=/usr/share/keyrings/podman.gpg] http://download.opensuse.org/repositories/devel:/kubic:/libcontainers:/stable/xUbuntu_20.04/ /"
     state: present
@@ -102,18 +101,17 @@
     keyserver: keyserver.ubuntu.com
     id: C5AD17C747E3415A3642D57D77C6C491D6AC1D69
     state: present
-
 - apt_repository:
-    repo: 'deb https://dl.k6.io/deb stable main'
+    repo: 'deb [signed-by=/usr/share/keyrings/k6-archive-keyring.gpg] https://dl.k6.io/deb stable main'
     state : present
     update_cache: no
 
 # Exa
-- name: Add EXA PPA
+- name: remove EXA PPA (deprecated)
   apt_repository:
     repo: ppa:spvkgn/exa
     codename: '{{ codename }}'
-    state : present
+    state : absent
     update_cache: no
 
 
