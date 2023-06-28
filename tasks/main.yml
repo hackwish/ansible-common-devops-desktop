@@ -6,3 +6,6 @@
 
 - include: packages.yml
   tags: packages
+
+- include: upgrade.yml
+  tags: upgrade
