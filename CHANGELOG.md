@@ -1,3 +1,12 @@
+## [1.2.1](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.2.0...v1.2.1) (2023-06-28)
+
+
+### Bug Fixes
+
+* **actions:** Update node version for github actions ([1c0765d](https://github.com/hackwish/ansible-common-devops-desktop/commit/1c0765d7f84b0878977ab8d3b95923ede719e049))
+* **ansible:** Add upgrade stage ([baac50c](https://github.com/hackwish/ansible-common-devops-desktop/commit/baac50ca809bb1c17ec71c3ec89ad3dfab00430f))
+* **ansible:** Add vagrant ([b28a11e](https://github.com/hackwish/ansible-common-devops-desktop/commit/b28a11e4eabbde3fe04d06968947513fa0ec000a))
+
 # [1.2.0](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.1.22...v1.2.0) (2022-12-28)
 
 
