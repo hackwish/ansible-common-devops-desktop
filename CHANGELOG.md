@@ -1,3 +1,10 @@
+## [1.3.5](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.4...v1.3.5) (2023-07-20)
+
+
+### Bug Fixes
+
+* **ansible-packages:** remove pip pakages ([77a8331](https://github.com/hackwish/ansible-common-devops-desktop/commit/77a8331a6043c321924e6839e4c6fc2c83f900c8))
+
 ## [1.3.4](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.3...v1.3.4) (2023-07-20)
 
 
