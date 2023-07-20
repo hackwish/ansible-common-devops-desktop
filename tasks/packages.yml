@@ -109,29 +109,29 @@
   #register: common-packages-installation
   tags: common
 
-# Snap
-- name: Install snaps
-  snap:
-    name:
-      - beekeeper-studio
-      - dbeaver-ce
-      # - insomnia
-      - k9s
-      # - postman
-      - sosumi
-      - kustomize
-      - storage-explorer
+# # Snap
+# - name: Install snaps
+#   snap:
+#     name:
+#       # - beekeeper-studio
+#       # - dbeaver-ce
+#       # - insomnia
+#       - k9s
+#       # - postman
+#       - sosumi
+#       - kustomize
+#       - storage-explorer
 
-- name: Install snaps classic
-  snap:
-    name:
-      - code
-      - helm
-      - powershell
-      - pycharm-community
-      - kontena-lens
-      # - android-studio
-    classic: yes
+# - name: Install snaps classic
+#   snap:
+#     name:
+#       # - code
+#       - helm
+#       - powershell
+#       # - pycharm-community
+#       # - kontena-lens
+#       # - android-studio
+#     classic: yes
 
 # Flatpak
 - name: Add the flathub flatpak repository remote to the user installation
@@ -144,14 +144,17 @@
 - name: Install multiple packages
   community.general.flatpak:
     name:
+      - com.getpostman.Postman
+      - com.google.AndroidStudio
+      - com.jetbrains.PyCharm-Community
       - com.sublimemerge.App
       - com.sublimetext.three
-      # - com.visualstudio.code
-      - com.google.AndroidStudio
-      # - org.gnome.meld
+      - com.visualstudio.code
+      - dev.k8slens.OpenLens
+      - io.beekeeperstudio.Studio
+      - io.dbeaver.DBeaverCommunity
       - rest.insomnia.Insomnia
-      - com.getpostman.Postman
-    method: system
+    method: user
 
 #INSTALL PIPS
 - name: Fixing packages deps
