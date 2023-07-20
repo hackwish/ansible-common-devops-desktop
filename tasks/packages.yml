@@ -166,8 +166,8 @@
     # executable: pip3
   vars:
     packages:
-      #- awscli
-      - avro-python3
+      # - awscli
+      # - avro-python3
       # - boto
       - cfn-lint
       - kubernetes
