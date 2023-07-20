@@ -90,7 +90,7 @@
       - google-cloud-sdk-terraform-validator
       - google-cloud-sdk-tests
       - httpie
-      - k6
+      # - k6
       - kubectl
       - libcurl4-openssl-dev
       - libffi-dev
