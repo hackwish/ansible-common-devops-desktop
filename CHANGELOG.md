@@ -1,3 +1,10 @@
+# [1.3.0](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.2.1...v1.3.0) (2023-07-20)
+
+
+### Features
+
+* **ansible:** remove snap package install stages. Add flatpak support. Update packages ([3847223](https://github.com/hackwish/ansible-common-devops-desktop/commit/3847223d1ed5549baeffc3c79c540363453b986c))
+
 ## [1.2.1](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.2.0...v1.2.1) (2023-06-28)
 
 
