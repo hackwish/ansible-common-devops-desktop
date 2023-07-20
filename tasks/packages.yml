@@ -141,7 +141,7 @@
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
     method: user
 
-- name: Install multiple packages
+- name: Install Flatpak packages
   community.general.flatpak:
     name:
       - com.getpostman.Postman
@@ -168,7 +168,7 @@
     packages:
       #- awscli
       - avro-python3
-      - boto
+      # - boto
       - cfn-lint
       - kubernetes
       - locust
