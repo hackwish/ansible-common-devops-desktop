@@ -1,3 +1,10 @@
+## [1.3.4](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.3...v1.3.4) (2023-07-20)
+
+
+### Bug Fixes
+
+* **ansible-packages:** remove pip avro ([dc85d29](https://github.com/hackwish/ansible-common-devops-desktop/commit/dc85d29b4225540d2166a92580560d7a149d8dd8))
+
 ## [1.3.3](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.2...v1.3.3) (2023-07-20)
 
 
