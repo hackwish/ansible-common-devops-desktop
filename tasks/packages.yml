@@ -169,13 +169,13 @@
       # - awscli
       # - avro-python3
       # - boto
-      - cfn-lint
-      - kubernetes
-      - locust
-      - pre-commit
-      - pyOpenSSL
-      - pydot
-      - secrets
+      # - cfn-lint
+      # - kubernetes
+      # - locust
+      # - pre-commit
+      # - pyOpenSSL
+      # - pydot
+      # - secrets
       - virtualenv
     state: present
 
