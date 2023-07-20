@@ -1,3 +1,10 @@
+## [1.3.2](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.1...v1.3.2) (2023-07-20)
+
+
+### Bug Fixes
+
+* **ansible-packages:** remove k6 ([7f487b5](https://github.com/hackwish/ansible-common-devops-desktop/commit/7f487b57c48b6220031f23dfc1d026595cc97b53))
+
 ## [1.3.1](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.0...v1.3.1) (2023-07-20)
 
 
