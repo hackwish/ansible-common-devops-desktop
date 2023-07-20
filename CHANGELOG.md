@@ -1,3 +1,10 @@
+## [1.3.1](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.0...v1.3.1) (2023-07-20)
+
+
+### Bug Fixes
+
+* **ansible-repos:** update k6 repo ([a4f30fa](https://github.com/hackwish/ansible-common-devops-desktop/commit/a4f30fa703cca4b0e77fabe7892ad62a2eba1fe1))
+
 # [1.3.0](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.2.1...v1.3.0) (2023-07-20)
 
 
