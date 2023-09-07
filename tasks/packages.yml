@@ -214,15 +214,14 @@
    # ignore_errors: true
 
 # Install from scripts
-- name: Get latest Release from glab
+- name: Install glab
   shell: curl -s https://raw.githubusercontent.com/profclems/glab/trunk/scripts/install.sh | sudo sh
   args:
     warn: no
   tags: glab
 
-- name: Get latest Release Infracost
+- name: Install Infracost
   shell: curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sudo sh
   args:
     warn: no
   tags: infrascost
-
