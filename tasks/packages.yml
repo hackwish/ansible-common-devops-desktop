@@ -143,7 +143,9 @@
 
 - name: Install Flatpak packages
   community.general.flatpak:
-    name:
+    name: "{{ packages }}"
+  vars:
+    packages:
       - com.getpostman.Postman
       - com.google.AndroidStudio
       - com.jetbrains.PyCharm-Community
