@@ -83,6 +83,7 @@
     - restfox
     - kustomize
     - storage-explorer
+    - yq
 
 - name: Install snaps classic
   snap:
