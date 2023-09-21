@@ -1,3 +1,10 @@
+## [1.3.7](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.6...v1.3.7) (2023-09-21)
+
+
+### Bug Fixes
+
+* **packages:** Enable Snaps ([7e29bcb](https://github.com/hackwish/ansible-common-devops-desktop/commit/7e29bcb342bbb24dcf91001e9a33e5b0b5de2947))
+
 ## [1.3.6](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.5...v1.3.6) (2023-09-07)
 
 
