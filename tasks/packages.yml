@@ -1,4 +1,3 @@
----
 #UPDATE - UPGRADE
 - name: Upgrading all packages (Ubuntu/Debian)
   apt:
@@ -8,130 +7,90 @@
 # FIX PACKAGES
 - name: Remove "virtualbox-6.1" package
   apt:
-   name: virtualbox-6.1
-   state: absent
- 
+    name: virtualbox-6.1
+    state: absent
+
 #INSTALL COMMON PACKAGES 
 - name: Instala paquetes devops common
-  apt: 
+  apt:
     name: "{{ packages }}"
   vars:
     packages:
-      # - buildah
-      # - docker
-      # - docker-ce
-      # - docker-compose
-      # - google-cloud-cli
-      # - google-cloud-cli-anthos-auth
-      # - google-cloud-cli-app-engine-go
-      # - google-cloud-cli-app-engine-grpc
-      # - google-cloud-cli-app-engine-java
-      # - google-cloud-cli-app-engine-python
-      # - google-cloud-cli-app-engine-python-extras
-      # - google-cloud-cli-bigtable-emulator
-      # - google-cloud-cli-cbt
-      # - google-cloud-cli-cloud-build-local
-      # - google-cloud-cli-cloud-run-proxy
-      # - google-cloud-cli-config-connector
-      # - google-cloud-cli-datalab
-      # - google-cloud-cli-datastore-emulator
-      # - google-cloud-cli-firestore-emulator
-      # - google-cloud-cli-gke-gcloud-auth-plugin
-      # - google-cloud-cli-harbourbridge
-      # - google-cloud-cli-kpt
-      # - google-cloud-cli-kubectl-oidc
-      # - google-cloud-cli-local-extract
-      # - google-cloud-cli-minikube
-      # - google-cloud-cli-nomos
-      # - google-cloud-cli-package-go-module
-      # - google-cloud-cli-pubsub-emulator
-      # - google-cloud-cli-skaffold
-      # - google-cloud-cli-spanner-emulator
-      # - google-cloud-cli-terraform-tools
-      # - google-cloud-cli-terraform-validator
-      # - google-cloud-cli-tests
-      # - google-cloud-sdk-minikube
-      # - meld
-      # - pgadmin3
-      # - podman
-      # - sublime-merge
-      # - sublime-text
-      # - virtualbox-6.1
-      - apache2-utils
-      - awscli
-      - exa
-      - google-cloud-sdk
-      - google-cloud-sdk-anthos-auth
-      - google-cloud-sdk-app-engine-go
-      - google-cloud-sdk-app-engine-grpc
-      - google-cloud-sdk-app-engine-java
-      - google-cloud-sdk-app-engine-python
-      - google-cloud-sdk-app-engine-python-extras
-      - google-cloud-sdk-bigtable-emulator
-      - google-cloud-sdk-cbt
-      - google-cloud-sdk-cloud-build-local
-      - google-cloud-sdk-cloud-run-proxy
-      - google-cloud-sdk-config-connector
-      - google-cloud-sdk-datalab
-      - google-cloud-sdk-datastore-emulator
-      - google-cloud-sdk-firestore-emulator
-      - google-cloud-sdk-gke-gcloud-auth-plugin
-      - google-cloud-sdk-harbourbridge
-      - google-cloud-sdk-kind
-      - google-cloud-sdk-kpt
-      - google-cloud-sdk-kubectl-oidc
-      - google-cloud-sdk-local-extract
-      - google-cloud-sdk-nomos
-      - google-cloud-sdk-package-go-module
-      - google-cloud-sdk-pubsub-emulator
-      - google-cloud-sdk-skaffold
-      - google-cloud-sdk-spanner-emulator
-      - google-cloud-sdk-terraform-tools
-      - google-cloud-sdk-terraform-validator
-      - google-cloud-sdk-tests
-      - httpie
-      # - k6
-      - kubectl
-      - libcurl4-openssl-dev
-      - libffi-dev
-      - libssl-dev
-      - meld
-      - mysql-client
-      - mysql-client-8.0
-      - postgresql-client
-      - pwgen
-      - qemu-kvm
-      - sshuttle
-      - terraspace
-      - vagrant
-      - virtualbox
+    - apache2-utils
+    - awscli
+    - exa
+    - google-cloud-sdk
+    - google-cloud-sdk-anthos-auth
+    - google-cloud-sdk-app-engine-go
+    - google-cloud-sdk-app-engine-grpc
+    - google-cloud-sdk-app-engine-java
+    - google-cloud-sdk-app-engine-python
+    - google-cloud-sdk-app-engine-python-extras
+    - google-cloud-sdk-bigtable-emulator
+    - google-cloud-sdk-cbt
+    - google-cloud-sdk-cloud-build-local
+    - google-cloud-sdk-cloud-run-proxy
+    - google-cloud-sdk-config-connector
+    - google-cloud-sdk-datalab
+    - google-cloud-sdk-datastore-emulator
+    - google-cloud-sdk-firestore-emulator
+    - google-cloud-sdk-gke-gcloud-auth-plugin
+    - google-cloud-sdk-harbourbridge
+    - google-cloud-sdk-kind
+    - google-cloud-sdk-kpt
+    - google-cloud-sdk-kubectl-oidc
+    - google-cloud-sdk-local-extract
+    - google-cloud-sdk-nomos
+    - google-cloud-sdk-package-go-module
+    - google-cloud-sdk-pubsub-emulator
+    - google-cloud-sdk-skaffold
+    - google-cloud-sdk-spanner-emulator
+    - google-cloud-sdk-terraform-tools
+    - google-cloud-sdk-terraform-validator
+    - google-cloud-sdk-tests
+    - httpie
+    # - k6
+    - kubectl
+    - libcurl4-openssl-dev
+    - libffi-dev
+    - libssl-dev
+    - meld
+    - mysql-client
+    - mysql-client-8.0
+    - postgresql-client
+    - pwgen
+    - qemu-kvm
+    - sshuttle
+    - terraspace
+    - vagrant
+    - virtualbox
     state: present
   #register: common-packages-installation
   tags: common
 
 # # Snap
-# - name: Install snaps
-#   snap:
-#     name:
-#       # - beekeeper-studio
-#       # - dbeaver-ce
-#       # - insomnia
-#       - k9s
-#       # - postman
-#       - sosumi
-#       - kustomize
-#       - storage-explorer
+- name: Install snaps
+  snap:
+    name:
+    # - beekeeper-studio
+    # - dbeaver-ce
+    # - insomnia
+    - k9s
+    # - postman
+    - sosumi
+    - kustomize
+    - storage-explorer
 
-# - name: Install snaps classic
-#   snap:
-#     name:
-#       # - code
-#       - helm
-#       - powershell
-#       # - pycharm-community
-#       # - kontena-lens
-#       # - android-studio
-#     classic: yes
+- name: Install snaps classic
+  snap:
+    name:
+    - code
+    # - helm
+    # - powershell
+    # - pycharm-community
+    # - kontena-lens
+    # - android-studio
+    classic: yes
 
 # Flatpak
 - name: Add the flathub flatpak repository remote to the user installation
@@ -168,17 +127,17 @@
     # executable: pip3
   vars:
     packages:
-      # - awscli
-      # - avro-python3
-      # - boto
-      # - cfn-lint
-      # - kubernetes
-      # - locust
-      # - pre-commit
-      # - pyOpenSSL
-      # - pydot
-      # - secrets
-      - virtualenv
+    # - awscli
+    # - avro-python3
+    # - boto
+    # - cfn-lint
+    # - kubernetes
+    # - locust
+    # - pre-commit
+    # - pyOpenSSL
+    # - pydot
+    # - secrets
+    - virtualenv
     state: present
 
   #INSTALL GEMS
@@ -212,8 +171,8 @@
   # - name: Install a .deb package for AWS VPN Client
   # apt:
   #   deb: https://d20adtppz83p9s.cloudfront.net/GTK/latest/awsvpnclient_amd64.deb
-   # when: ansible_os_family == "Debian"
-   # ignore_errors: true
+  # when: ansible_os_family == "Debian"
+  # ignore_errors: true
 
 # Install from scripts
 - name: Install glab
