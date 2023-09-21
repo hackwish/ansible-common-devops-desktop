@@ -1,3 +1,10 @@
+## [1.3.10](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.9...v1.3.10) (2023-09-21)
+
+
+### Bug Fixes
+
+* **repos:** absent sublime repo. Add yq package ([68b023c](https://github.com/hackwish/ansible-common-devops-desktop/commit/68b023c03ea13d90bf7675bbd333f4467aa23194))
+
 ## [1.3.9](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.8...v1.3.9) (2023-09-21)
 
 
