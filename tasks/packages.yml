@@ -76,11 +76,11 @@
 - name: Install snaps
   snap:
     name:
-    # - beekeeper-studio
-    # - dbeaver-ce
-    # - insomnia
+    - beekeeper-studio
+    - dbeaver-ce
     - k9s
-    # - postman
+    - postman
+    - restfox
     - kustomize
     - storage-explorer
 
@@ -89,11 +89,14 @@
     name:
     - code
     - codium
-    # - helm
-    # - powershell
+    - microk8s
+    - helm
+    - powershell
     # - pycharm-community
-    # - kontena-lens
-    # - android-studio
+    - kontena-lens
+    - android-studio
+    - sublime-text
+    - sublime-merge
     classic: yes
 
 # Flatpak
@@ -104,22 +107,22 @@
     flatpakrepo_url: https://dl.flathub.org/repo/flathub.flatpakrepo
     method: user
 
-# - name: Install Flatpak packages
-#   community.general.flatpak:
-#     name: "{{ packages }}"
-#   vars:
-#     packages:
-#       - com.getpostman.Postman
-#       - com.google.AndroidStudio
-#       - com.jetbrains.PyCharm-Community
-#       - com.sublimemerge.App
-#       - com.sublimetext.three
-#       - com.visualstudio.code
-#       - dev.k8slens.OpenLens
-#       - io.beekeeperstudio.Studio
-#       - io.dbeaver.DBeaverCommunity
-#       - rest.insomnia.Insomnia
-#     method: user
+- name: Install Flatpak packages
+  community.general.flatpak:
+    name: "{{ packages }}"
+  vars:
+    packages:
+    #       - com.getpostman.Postman
+    #       - com.google.AndroidStudio
+    #       - com.jetbrains.PyCharm-Community
+    #       - com.sublimemerge.App
+    #       - com.sublimetext.three
+    #       - com.visualstudio.code
+    - dev.k8slens.OpenLens
+    #       - io.beekeeperstudio.Studio
+    #       - io.dbeaver.DBeaverCommunity
+    #       - rest.insomnia.Insomnia
+    method: user
 
 #INSTALL PIPS
 - name: Fixing packages deps
