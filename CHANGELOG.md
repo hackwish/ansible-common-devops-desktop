@@ -1,3 +1,10 @@
+## [1.3.11](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.10...v1.3.11) (2023-09-21)
+
+
+### Bug Fixes
+
+* **repos:** absent sublime repo ([7ccaae8](https://github.com/hackwish/ansible-common-devops-desktop/commit/7ccaae89d0bbcc036d206bd451bca382f2ccccf0))
+
 ## [1.3.10](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.9...v1.3.10) (2023-09-21)
 
 
