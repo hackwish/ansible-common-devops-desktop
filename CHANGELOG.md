@@ -1,3 +1,10 @@
+## [1.3.12](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.11...v1.3.12) (2023-12-11)
+
+
+### Bug Fixes
+
+* **packages:** add opentofu ([72c17d9](https://github.com/hackwish/ansible-common-devops-desktop/commit/72c17d9dd613cd90c890554f07aa83dfeb366ca2))
+
 ## [1.3.11](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.10...v1.3.11) (2023-09-21)
 
 
