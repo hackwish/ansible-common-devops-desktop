@@ -1,3 +1,10 @@
+## [1.3.13](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.12...v1.3.13) (2023-12-14)
+
+
+### Bug Fixes
+
+* **repo:** Add codename default var ([eeede9c](https://github.com/hackwish/ansible-common-devops-desktop/commit/eeede9c4547652a71434ce98db084ec90dfcac27))
+
 ## [1.3.12](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.11...v1.3.12) (2023-12-11)
 
 
