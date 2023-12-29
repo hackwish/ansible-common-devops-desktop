@@ -1,3 +1,10 @@
+## [1.3.15](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.14...v1.3.15) (2023-12-29)
+
+
+### Bug Fixes
+
+* **packages:** remove flathub repo ([768e338](https://github.com/hackwish/ansible-common-devops-desktop/commit/768e338f2bc9811fd2adf399bf883140b5f21587))
+
 ## [1.3.14](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.13...v1.3.14) (2023-12-14)
 
 
