@@ -50,14 +50,14 @@
 - apt_key:
     url: https://download.docker.com/linux/ubuntu/gpg
     keyring: /usr/share/keyrings/docker-archive-keyring.gpg
-    state: present
+    state: absent
 # - apt_repository:
 #     repo: 'deb [arch=amd64] https://download.docker.com/linux/ubuntu '{{ codename }}' stable'
 #     state : present
 #     when: ansible_distribution == 'Linux Mint'
 - apt_repository:
     repo: deb [arch=amd64 signed-by=/usr/share/keyrings/docker-archive-keyring.gpg] https://download.docker.com/linux/ubuntu {{ codename }} stable
-    state : present
+    state : absent
     update_cache: no
 
 #GCLOUD SDK
