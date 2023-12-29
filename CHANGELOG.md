@@ -1,3 +1,10 @@
+## [1.3.14](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.13...v1.3.14) (2023-12-14)
+
+
+### Bug Fixes
+
+* **repo:** update action ([cc4e300](https://github.com/hackwish/ansible-common-devops-desktop/commit/cc4e300c44405109284c63090253c3457d159bd4))
+
 ## [1.3.13](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.12...v1.3.13) (2023-12-14)
 
 
