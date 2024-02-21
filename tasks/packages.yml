@@ -64,6 +64,7 @@
     - terraspace
     - vagrant
     - virtualbox
+    - tmate
     state: present
   #register: common-packages-installation
   tags: common
