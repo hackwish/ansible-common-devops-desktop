@@ -1,3 +1,10 @@
+## [1.3.17](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.16...v1.3.17) (2023-12-29)
+
+
+### Bug Fixes
+
+* **packages:** remove docker repo ([b61fd78](https://github.com/hackwish/ansible-common-devops-desktop/commit/b61fd78f64e99344c812611bc2d849c3a189e0a9))
+
 ## [1.3.16](https://github.com/hackwish/ansible-common-devops-desktop/compare/v1.3.15...v1.3.16) (2023-12-29)
 
 
