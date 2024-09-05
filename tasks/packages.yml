@@ -63,7 +63,7 @@
     - sshuttle
     - terraspace
     - vagrant
-    - virtualbox
+    # - virtualbox
     - tmate
     state: present
   #register: common-packages-installation
