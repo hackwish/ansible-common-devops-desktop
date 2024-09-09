@@ -17,7 +17,7 @@
   vars:
     packages:
     - apache2-utils
-    - awscli
+    # - awscli
     - exa
     - google-cloud-sdk
     - google-cloud-sdk-anthos-auth
