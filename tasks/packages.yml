@@ -16,9 +16,12 @@
     name: "{{ packages }}"
   vars:
     packages:
-    - apache2-utils
     # - awscli
     # - exa
+    # - google-cloud-sdk-kind
+    # - k6
+    # - virtualbox
+    - apache2-utils
     - google-cloud-sdk
     - google-cloud-sdk-anthos-auth
     - google-cloud-sdk-app-engine-go
@@ -36,7 +39,6 @@
     - google-cloud-sdk-firestore-emulator
     - google-cloud-sdk-gke-gcloud-auth-plugin
     - google-cloud-sdk-harbourbridge
-    # - google-cloud-sdk-kind
     - google-cloud-sdk-kpt
     - google-cloud-sdk-kubectl-oidc
     - google-cloud-sdk-local-extract
@@ -49,7 +51,6 @@
     - google-cloud-sdk-terraform-validator
     - google-cloud-sdk-tests
     - httpie
-    # - k6
     - kubectl
     - libcurl4-openssl-dev
     - libffi-dev
@@ -59,12 +60,13 @@
     - mysql-client-8.0
     - postgresql-client
     - pwgen
+    - python3-psutil
+    - python3-pyyaml-env-tag
     - qemu-kvm
     - sshuttle
     - terraspace
-    - vagrant
-    # - virtualbox
     - tmate
+    - vagrant
     state: present
   #register: common-packages-installation
   tags: common
@@ -85,6 +87,7 @@
     - kustomize
     - storage-explorer
     - yq
+    - multipass
 
 - name: Install snaps classic
   snap:
@@ -128,8 +131,8 @@
     method: user
 
 #INSTALL PIPS
-- name: Fixing packages deps
-  shell: pip3 install --ignore-installed pyzmq PyYAML psutil
+# - name: Fixing packages deps
+#   shell: pip3 install --ignore-installed pyzmq PyYAML psutil
 
 - name: Install Python packages.
   pip:
@@ -147,7 +150,9 @@
     # - pyOpenSSL
     # - pydot
     # - secrets
-    - virtualenv
+    # - virtualenv
+    - pyzmq
+    - PyYAML
     state: present
 
   #INSTALL GEMS
