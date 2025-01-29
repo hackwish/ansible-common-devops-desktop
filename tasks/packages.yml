@@ -134,26 +134,26 @@
 # - name: Fixing packages deps
 #   shell: pip3 install --ignore-installed pyzmq PyYAML psutil
 
-- name: Install Python packages.
-  pip:
-    name: "{{ packages }}"
-    # executable: pip3
-  vars:
-    packages:
-    # - awscli
-    # - avro-python3
-    # - boto
-    # - cfn-lint
-    # - kubernetes
-    # - locust
-    # - pre-commit
-    # - pyOpenSSL
-    # - pydot
-    # - secrets
-    # - virtualenv
-    - pyzmq
-    - PyYAML
-    state: present
+# - name: Install Python packages.
+#   pip:
+#     name: "{{ packages }}"
+#     # executable: pip3
+#   vars:
+#     packages:
+#     # - awscli
+#     # - avro-python3
+#     # - boto
+#     # - cfn-lint
+#     # - kubernetes
+#     # - locust
+#     # - pre-commit
+#     # - pyOpenSSL
+#     # - pydot
+#     # - secrets
+#     # - virtualenv
+#     - pyzmq
+#     - PyYAML
+#     state: present
 
   #INSTALL GEMS
 - name: Install RB packages rake.
