@@ -192,12 +192,12 @@
 # Install from scripts
 - name: Install glab
   shell: curl -s https://raw.githubusercontent.com/profclems/glab/trunk/scripts/install.sh | sudo sh
-  args:
-    warn: no
+  # args:
+  #   warn: no
   tags: glab
 
 - name: Install Infracost
   shell: curl -fsSL https://raw.githubusercontent.com/infracost/infracost/master/scripts/install.sh | sudo sh
-  args:
-    warn: no
+  # args:
+  #   warn: no
   tags: infrascost
