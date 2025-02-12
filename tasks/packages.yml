@@ -92,7 +92,7 @@
 - name: Install snaps classic
   snap:
     name:
-    - bruno
+    # - bruno
     - code
     - codium
     - microk8s
